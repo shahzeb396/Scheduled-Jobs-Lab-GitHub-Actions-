@@ -1,0 +1,12 @@
+name: Scheduled Jobs
+
+on:
+  schedule:
+    - cron: "*/2 * * * *"  
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "This job runs every 2 Mint And Created By Shahzeb"
